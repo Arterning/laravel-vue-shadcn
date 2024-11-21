@@ -4,7 +4,7 @@ import Button from '@/components/ui/button/Button.vue';
 import Input from '@/components/ui/input/Input.vue';
 import Select from '@/Components/Select.vue';
 import BillBoard from '@/Components/BillBoard.vue';
-import CardList from '@/Components/CardList.vue';
+
 defineProps<{
     name?: string;
 }>();
@@ -13,8 +13,13 @@ defineProps<{
 
 <template>
     <Head title="Welcome" />
-    <div class="bg-black">
-        <BillBoard />
-        <CardList />
+    <Button>nice job</Button>
+    <Input placeholder="o"/>
+
+    {{ name }}
+
+    <div class="bg-indigo-200 ronded">
+        div field 骚气的紫色
     </div>
+    <Select />
 </template>

@@ -14,6 +14,10 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/demo0', function() {
+    return Inertia::render('demo0');
+});
+
 Route::get('/demo1', function() {
     return Inertia::render('demo1', [
         'name'=> '这是php返回的值',
